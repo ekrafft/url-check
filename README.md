@@ -3,19 +3,6 @@ Robust and simple PowerShell script to check the accessibility and response time
 
 A lightweight PowerShell script for monitoring website availability and response times. Perfect for system administrators and DevOps professionals who need to validate endpoint accessibility.
 
-## 📋 Table of Contents
-- [Features](#features)
-- [Quick Start](#quick-start)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Parameters](#parameters)
-- [Output Format](#output-format)
-- [Examples](#examples)
-- [Version History](#version-history)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## ✨ Features
 
 - **HTTP Method Support** - GET, HEAD, and POST requests
