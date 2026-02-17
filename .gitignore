@@ -1,0 +1,120 @@
+# URL Checker - Git Ignore File
+
+## Results and Output Files
+# Ignore all CSV result files (they contain dynamic data)
+/results/
+*.csv
+!template.csv  # If you ever add a template example
+
+## Log Files
+# Ignore all log files (they contain execution details)
+*.log
+*.txt
+!README.md
+!LICENSE
+!URLList.txt  # Keep the template, but not the actual results
+
+## PowerShell Specific
+# Temporary PowerShell files
+*.ps1~
+*.psm1~
+*.psd1~
+*.pssproj
+*.ps1.user
+
+## Windows System Files
+# Windows thumbnail cache
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Windows shortcut files
+*.lnk
+
+# Windows Explorer
+Desktop.ini
+$RECYCLE.BIN/
+
+## Visual Studio Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+*.code-workspace
+.history/
+
+## PowerShell Module Cache
+modules/
+PSGetModuleInfo.xml
+powershell.config.json
+
+## User-Specific Files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+## Build Results
+dist/
+build/
+*.exe
+*.dll
+*.pdb
+
+## Backup Files
+*.bak
+*.old
+*.orig
+
+## NuGet Packages
+packages/
+*.nupkg
+
+## Environment and Secrets
+.env
+*.key
+*.p12
+*.pfx
+*.secret
+
+## IDE Directories
+.idea/
+.vs/
+*.sln.docstates
+
+## Testing Coverage
+coverage/
+*.coverage
+*.trx
+
+## Documentation Temp Files
+temp/
+*.tmp
+
+## GitHub Specific
+# GitHub Pages build
+_docs/
+
+# Keep these important files
+!README.md
+!LICENSE
+!.gitignore
+!URLList.txt
+
+## Custom Rules for URL Checker
+# Don't ignore the template URL list
+!URLList.txt
+
+# But ignore any renamed copies or backups of URL lists
+*URLList*.bak
+*URLList*.old
+*URLList*.backup
+
+# Ignore large result files
+results_archive/
+archive/
+old_results/
+
+## Optional: Keep example files
+!example/
+!*.example.csv
