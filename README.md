@@ -40,23 +40,8 @@ No administrative privileges required
 | -TimeoutSeconds	| Request timeout in seconds	| 30 |
 
 ## 📊 Output Format
-# URL List Template (URLList.txt)
-TXT
-# Add one URL per line (include http:// or https://)
-# Lines starting with # are ignored
-https://www.google.com
-https://github.com
-https://api.github.com/zen
-# CSV Results (results\URL-Check-Results_*.csv)
-CSV
-Timestamp,URL,Method,StatusCode,StatusDescription,ResponseTimeMs,ErrorMessage,IgnoreCertErrors
-2025-02-17 14:30:45,https://google.com,GET,200,OK,125.45,,False
-2025-02-17 14:30:46,https://nonexistent.site,GET,N/A,Error,5000.00,The remote name could not be resolved,False
-# Log File (results\url-check-log_*.txt)
-TXT
-2025-02-17 14:30:45 [INFO] - Script execution started. Method: GET, Timeout: 30s
-2025-02-17 14:30:45 [INFO] - Success: https://google.com - 200 (125.45ms)
-2025-02-17 14:30:46 [ERROR] - Error: https://nonexistent.site - The remote name could not be resolved
+CSV Results (results\URL-Check-Results_*.csv)
+Log File (results\url-check-log_*.txt)
 
 ## Version History
 | Version	| Date	| Changes |
