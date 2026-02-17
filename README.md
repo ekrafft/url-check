@@ -20,13 +20,13 @@ Internet connectivity (for external URL checks)
 No administrative privileges required
 
 ## 📝 Usage
--> Quick Health Check (HEAD Method)
+# Quick Health Check (HEAD Method)
 .\url-check.ps1 -Method HEAD
--> Ignore Certificate Errors
+# Ignore Certificate Errors
 .\url-check.ps1 -IgnoreCertErrors
--> Custom Timeout
+# Custom Timeout
 .\url-check.ps1 -TimeoutSeconds 15
--> Combine Parameters
+# Combine Parameters
 .\url-check.ps1 -Method HEAD -IgnoreCertErrors -TimeoutSeconds 10
 
 ## ⚙️ Parameters
@@ -40,19 +40,19 @@ No administrative privileges required
 | -TimeoutSeconds	| Request timeout in seconds	| 30 |
 
 ## 📊 Output Format
--> URL List Template (URLList.txt)
+# URL List Template (URLList.txt)
 TXT
 # Add one URL per line (include http:// or https://)
 # Lines starting with # are ignored
 https://www.google.com
 https://github.com
 https://api.github.com/zen
--> CSV Results (results\URL-Check-Results_*.csv)
+# CSV Results (results\URL-Check-Results_*.csv)
 CSV
 Timestamp,URL,Method,StatusCode,StatusDescription,ResponseTimeMs,ErrorMessage,IgnoreCertErrors
 2025-02-17 14:30:45,https://google.com,GET,200,OK,125.45,,False
 2025-02-17 14:30:46,https://nonexistent.site,GET,N/A,Error,5000.00,The remote name could not be resolved,False
--> Log File (results\url-check-log_*.txt)
+# Log File (results\url-check-log_*.txt)
 TXT
 2025-02-17 14:30:45 [INFO] - Script execution started. Method: GET, Timeout: 30s
 2025-02-17 14:30:45 [INFO] - Success: https://google.com - 200 (125.45ms)
