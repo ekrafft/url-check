@@ -1,0 +1,29 @@
+# URL Check List
+# Format: One URL per line
+# Lines starting with # are ignored
+# Include http:// or https:// prefix
+
+# Production URLs
+https://www.google.com
+https://github.com
+https://stackoverflow.com
+
+# Test URLs (uncomment to test)
+# http://httpbin.org/status/200
+# http://httpbin.org/status/404
+# http://httpbin.org/status/500
+# https://nonexistent.domain.test
+
+# API Endpoints
+https://api.github.com/zen
+https://jsonplaceholder.typicode.com/posts/1
+
+# URLs with special characters (URL-encoded)
+https://example.com/path%20with%20spaces
+https://example.com/search?q=powerShell
+
+# Empty lines are also ignored
+
+# Local/test URLs (will likely fail)
+http://localhost:8080
+http://127.0.0.1
